@@ -1,0 +1,7 @@
+def getParameters(args) {
+    return {
+        stringParam('NATIVE_TEST_PLAN', 'testPlan.js', 'Enter the relative path of test plan that you would like to execute. This path should be relative to the "testresources/Jasmine/Mobile/Test Plans" or "testresources/Jasmine/Tablet/Test Plans"  folder. If no value is provided, the default plan (testPlan.js) will be executed.<br><b>Note: </b>This parameter is only valid if Jasmine is selected as TEST_FRAMEWORK.')
+        stringParam('APPIUM_VERSION','', 'Enter the Appium version to run the tests. <br>For Example: 1.9.1<br> <b>Note : </b> This parameter is required only if Custom is selected as TEST_ENVIRONMENT, irrespective of the test framework. Visit <a href="https://opensource.hcltechsw.com/volt-mx-docs/docs/documentation/Foundry/voltmx_appfactory_user_guide/Content/RunningIrisApp.html">Volt MX AppFactory Documentation</a> for more details.')
+        stringParam('TESTNG_FILES', 'Testng.xml', 'Path of the TestNG file/s in testing jar. If you do not pass any TestNG file path, Testng.xml will be taken as default one assuming the file is present in root location. For multiple files, provide comma separated paths.<br> For example: quantum/Testng.xml, quantum/appfactory/Testng.xml, testng.xml has three TestNG files at different locations to be rendered.<br><b> Note: </b>This parameter is only valid if Custom is selected as TEST_ENVIRONMENT.')
+    }
+}

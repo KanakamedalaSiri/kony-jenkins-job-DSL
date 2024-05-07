@@ -1,0 +1,49 @@
+<div>
+    To determine which version of your application source, use this field to specify a branch, release tag or commit Id in the repository where your source code is stored. To do this <em>Appfactory</em> recommends the following options:
+    <div id="more-button" class="chevron-down"></div>
+    <br/>
+    <div id='collapsable'>
+        <div class='collapsable-wrapper'>
+            <ul>
+                <li> <b><code>refs/heads/&lt;branchName&gt;</code></b>
+                    <br/> Tracks/checks out the specified branch.
+                    <br/> E.g.
+                    <code>refs/heads/master</code>,
+                    <code>refs/heads/develop</code>,
+                    <code>refs/heads/feature/FOO-001</code>
+                </li>
+                <li> <b><code>refs/tags/&lt;tagName&gt;</code></b>
+                    <br/> Tracks/checks out the specified tag.
+                    <br/> E.g.
+                    <code>refs/tags/v1.0.1</code>
+                </li>
+                <li> <b><code>&lt;commitId&gt;</code></b>
+                    <br/> Checks out the specified commit.
+                    <br/> E.g.
+                    <code>5062ac843f2b947733e6a3b105977056821bd352</code>
+                </li>
+                <li> <b><code>&lt;Wildcards&gt;</code></b>
+                    <br/>
+
+                    The star/asterisk <code>'*'</code> character is recognized as a wildcard, and <code>'**'</code> is recognized as wildcard that includes the slash separator <code>/</code>. Therefore,
+                    <br/>
+                    <code>refs/heads/feature*</code> will match
+                    <code>refs/heads/reature-FOO-001</code> but not
+                    <code>refs/heads/feature/FOO-001</code>.
+                    <br/>
+                    ...while
+                    <br/>
+                    <code>refs/heads/feature**</code> will match both
+                    <code>refs/heads/feature-FOO-001</code> and
+                    <code>refs/heads/feature/FOO-001</code>.
+                    <br/>
+                    <strong>Note:</strong> You should only use wildcards when defining Watchers.
+                    <br/>
+                </li>
+            </ul>
+            <strong>Note:</strong>The use of the star/asterisk <code>*</code> or <code>**</code> as wildcards is discouraged here. It should only be used to define <em>Watchers</em>.
+        </div>
+        <br/>
+        <br/>
+    </div>
+</div>

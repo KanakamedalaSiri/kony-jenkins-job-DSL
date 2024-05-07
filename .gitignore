@@ -1,0 +1,12 @@
+/.classpath
+/target
+/.project
+/.settings
+/work
+/.idea
+*.iml
+.idea/kony-jenkins-job-DSL.iml
+.idea/kony-jenkins-job-DSL.iml
+*.iml
+bin
+.DS_Store

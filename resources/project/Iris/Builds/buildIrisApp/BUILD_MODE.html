@@ -1,0 +1,16 @@
+<div>
+    Choose to build your <em>Iris</em> project in <code>Debug</code> or <code>Test</code> or <code>Release</code> or <code>Release-protected</code> mode.
+    <div id="more-button2" class="chevron-down"></div>
+    <div id='collapsable2'>
+         <div class='collapsable-wrapper2'>
+            <strong>Note:</strong>  If you build in <code>Debug</code> mode, the landing screen in the generated app will  be <em>Volt MX</em>'s debugger screen, which your test automation scripts will most likely not be prepared to navigate away from. If you're building your project for automated testing using <em>Jasmine test framework</em>, you should build it in <code>Test</code> mode. For all other automation frameworks (Ex: TestNG), you will most likely want to build it in <code>Release</code> or <code>Release-protected</code> mode.
+            <br/>
+            If you choose to build your <em>Iris</em> project in <code>Release</code> mode, It will not enable additional security and build the application in release unprotected mode.
+            <br/>
+            The <code>Release-protected</code> mode enables additional security features that can protect your native built applications by detecting attacks like tampering, swizzling, debugging, jail breaking (iOS), rooting (Android), and information disclosure. The feature is generally enabled in the build UI mode at "Project Settings -> Native -> iPhone/iPad/Watch or Android -> Protected Mode" in <em>Iris</em>. You can refer more information about the protected mode in <em>Iris</em> User Guide.
+            <br/>
+            <br/>
+            <strong>Note:</strong> If you try to build DekstopWeb in <code>Release-protected</code> mode, it will be built in <code>Release</code> mode.
+        </div>
+    </div>
+</div>
