@@ -13,23 +13,23 @@
                 <tbody>
                 <tr>
                     <td>MINUTE</td>
-                    <td>Minutes within the hour (0–59)</td>
+                    <td>Minutes within the hour (0-59)</td>
                 </tr>
                 <tr>
                     <td>HOUR</td>
-                    <td>The hour of the day (0–23)</td>
+                    <td>The hour of the day (0-23)</td>
                 </tr>
                 <tr>
                     <td>DOM</td>
-                    <td>The day of the month (1–31)</td>
+                    <td>The day of the month (1-31)</td>
                 </tr>
                 <tr>
                     <td>MONTH</td>
-                    <td>The month (1–12)</td>
+                    <td>The month (1-12)</td>
                 </tr>
                 <tr>
                     <td>DOW</td>
-                    <td>The day of the week (0–7) where 0 and 7 are Sunday.</td>
+                    <td>The day of the week (0-7) where 0 and 7 are Sunday.</td>
                 </tr>
                 </tbody>
             </table>
@@ -47,7 +47,7 @@
             </ul>
             <p>
                 To allow periodically scheduled tasks to produce even load on the system, the symbol <code>H</code> (for
-                “hash”) should be used wherever possible. For example, using <code>0 0 * * *</code> for a dozen daily
+                "hash") should be used wherever possible. For example, using <code>0 0 * * *</code> for a dozen daily
                 jobs will cause a large spike at midnight. In contrast, using <code>H H * * *</code> would still execute
                 each job once a day, but not all at the same time, better using limited resources.
             </p>
@@ -63,7 +63,7 @@
             <p>
                 Beware that for the day of month field, short cycles such as <code>*/3</code> or <code>H/3</code> will
                 not work consistently near the end of most months, due to variable month lengths. For example,
-                <code>*/3</code> will run on the 1st, 4th, …31st days of a long month, then again the next day of the
+                <code>*/3</code> will run on the 1st, 4th, ...31st days of a long month, then again the next day of the
                 next month. Hashes are always chosen in the 1-28 range, so <code>H/3</code> will produce a gap between
                 runs of between 3 and 6 days at the end of a month. (Longer cycles will also have inconsistent lengths
                 but the effect may be relatively less noticeable.)
